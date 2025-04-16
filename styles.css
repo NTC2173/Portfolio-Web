@@ -1,27 +1,36 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Fuente moderna */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.8;
+    background: #f9f9f9; /* Fondo claro y limpio */
+    color: #333; /* Texto más suave */
 }
 
 header {
-    background: #0078D4;
+    background: linear-gradient(90deg, #0078D4, #0056A1); /* Gradiente moderno */
     color: #ffffff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 h1, h2, h3 {
     margin: 0;
+    font-weight: 600; /* Peso de fuente más marcado */
 }
 
 main {
-    padding: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar contenido */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 ul {
@@ -30,32 +39,44 @@ ul {
 }
 
 li {
-    background: #f4f4f4;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
+    background: #ffffff;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave */
+}
+
+li:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #0078D4;
+    padding: 15px 0;
+    background: linear-gradient(90deg, #0056A1, #0078D4); /* Gradiente */
     color: #ffffff;
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra superior */
 }
 
 @media (max-width: 600px) {
     body {
-        padding: 10px;
+        padding: 15px;
     }
 
     header, footer {
-        padding: 15px 0;
+        padding: 20px 0;
     }
 
     main {
+        padding: 15px;
+    }
+
+    li {
         padding: 10px;
     }
 }
